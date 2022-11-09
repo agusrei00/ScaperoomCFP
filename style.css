@@ -1,0 +1,75 @@
+:root {
+  --red-color: #880000;
+  --blue-color: #004488;
+  --pink-color: #AA0088;
+  --text-color: #EEEEEE;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  color: var(--text-color);
+}
+
+button {
+  line-height: 100px;
+  width: 100px;
+  border-radius: 40%;
+  font-size: 2em;
+  color: var(--text-color);
+}
+
+#main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+}
+
+#keypad {
+  grid-column: 1;
+  width: 50%;
+  margin-left: 10%;
+}
+
+#sum {
+  grid-column: 2;
+  margin-right: 10%;
+}
+
+.numberButton {
+  background-color: var(--red-color);
+}
+
+.zeroButton {
+  background-color: var(--pink-color);
+}
+
+.signButton {
+  background-color: var(--blue-color);
+}
+
+.figurePosition {
+  background-color: var(--red-color);
+  text-align: center;
+  line-height: 80px;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.signPosition {
+  background-color: var(--blue-color);
+  text-align: center;
+  line-height: 80px;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.equalsPosition {
+  background-color: var(--pink-color);
+  text-align: center;
+  line-height: 80px;
+  font-size: 2em;
+  padding: 10px;
+}
